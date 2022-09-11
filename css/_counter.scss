@@ -1,0 +1,77 @@
+.counter {
+    background-color: $backgroundLight;
+    position: relative;
+
+    &::before {
+        position: absolute;
+        content: '';
+        display: inline-block;
+        left: 0;
+        bottom: 0;
+        width: 35vw;
+        height: 35vw;
+        border: 5vw solid #c8c8c8;
+        border-radius: 50%;
+        opacity: .5;
+        transform: translate(-15vw, 15vw);
+        pointer-events: none;
+    }
+
+    &::after {
+        position: absolute;
+        content: '';
+        display: inline-block;
+        width: 25vw;
+        height: 25vw;
+        right: 0;
+        top: 0;
+        border: 5vw solid #c8c8c8;
+        transform: rotate(45deg) translate(5vw, -10vw);
+        opacity: .5;
+        pointer-events: none;
+    }
+
+    // .counter__container
+
+    &__container {
+        position: relative;
+        z-index: 1;
+        padding-top: 10vh;
+        padding-bottom: 10vh;
+        row-gap: 70px;
+        text-align: center;
+    }
+
+    &__h2{
+        margin-bottom: 50px;
+    }
+}
+
+.card-counter {
+    display: flex;
+    padding-top: 10px;
+    flex-direction: column;
+    row-gap: 20px;
+    align-items: center;
+
+    // .card-counter__numbers
+
+    &__numbers {
+        font-size: rem(60);
+        color: $backgroundMiddle;
+        font-weight: 700;
+        text-transform: uppercase;
+        line-height: 0.5;
+        flex: 1 1 auto;
+    }
+
+    // .card-counter__description
+
+    &__description {
+        font-size: 0.875rem;
+        font-weight: 600;
+        text-transform: uppercase;
+        color: $linkDark;
+        line-height: 1.857;
+    }
+}

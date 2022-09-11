@@ -1,0 +1,63 @@
+.subscribe {
+    background: linear-gradient(90deg, $backgroundDark, $backgroundMiddle);
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+
+    &__container {
+        display: flex;
+        flex-direction: row;
+        row-gap: 50px;
+        justify-content: space-between;
+        align-items: center;
+
+        @media (max-width:$mobile) {
+            .block-out-right {
+                justify-content: center;
+            }
+        }
+    }
+
+    @media (max-width:$mobile) {
+        flex-direction: column;
+    }
+
+    &__content {
+        flex: 0 0 58%;
+        display: grid;
+        row-gap: 30px;
+    }
+
+    &__text {
+        font-size: rem(18);
+        color: $textLight;
+        line-height: 1.556;
+    }
+
+    &__form {
+        border: 1px solid $backgroundMiddle;
+        border-radius: 40px;
+        padding: 10px 10px 10px 40px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px 40px;
+    }
+
+    &__input {
+        flex: auto;
+        font-size: rem(20);
+        color: $textLight;
+        background-color: inherit;
+        outline: none;
+    }
+
+    &__picture {
+        flex: 0 0 42%;
+        width: 100%;
+        text-align: center;
+    }
+
+    &__img {
+        width: 100%;
+        max-width: 450px;
+    }
+}

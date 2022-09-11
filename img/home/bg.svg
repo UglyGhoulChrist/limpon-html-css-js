@@ -1,0 +1,53 @@
+<svg id="bg" xmlns="http://www.w3.org/2000/svg" width="1920" height="1005" viewBox="0 0 1920 1005">
+  <defs>
+    <style>
+      .cls-1, .cls-7 {
+        fill: #edf6ff;
+      }
+
+      .cls-2, .cls-4 {
+        fill: #1085e4;
+      }
+
+      .cls-2, .cls-3, .cls-6, .cls-7, .cls-8, .cls-9 {
+        fill-rule: evenodd;
+      }
+
+      .cls-3 {
+        fill: #192b59;
+      }
+
+      .cls-5 {
+        fill: #fff;
+      }
+
+      .cls-6 {
+        fill: #f4faff;
+      }
+
+      .cls-8 {
+        fill: #d3e9ff;
+      }
+
+      .cls-9 {
+        fill: #eff6ff;
+      }
+    </style>
+  </defs>
+  <rect id="bg-2" data-name="bg" class="cls-1" y="9784" width="1920" height="840"/>
+  <path class="cls-2" d="M-103.083,10078.4l704.71-255.41L857,10527.9l-704.711,255.5Z"/>
+  <path class="cls-3" d="M-218,10310l704.71-255.4,255.377,704.9L37.378,11015Z"/>
+  <path id="bg-3" data-name="bg" class="cls-4" d="M0,7461H1313a400,400,0,0,1,400,400v0a0,0,0,0,1,0,0H0a0,0,0,0,1,0,0V7461A0,0,0,0,1,0,7461Z"/>
+  <rect id="bg-4" data-name="bg" class="cls-1" x="517" y="5195" width="1920" height="691"/>
+  <path class="cls-2" d="M-175.084,5503.45l704.711-255.46L785,5952.93,80.293,6208.39Z"/>
+  <path class="cls-3" d="M-290,5735.05l704.71-255.46,255.377,704.94L-34.622,6439.99Z"/>
+  <rect id="bg-5" data-name="bg" class="cls-5" y="5885" width="1920" height="691"/>
+  <path class="cls-3" d="M1118,6422.05l704.71-255.46,255.38,704.94-704.71,255.46Z"/>
+  <path class="cls-2" d="M1242.92,6048.45l704.71-255.46L2203,6497.93l-704.71,255.46Z"/>
+  <path class="cls-3" d="M-478.942,3505.9l994.955-420.08L936.09,4080.78-58.865,4500.86Z"/>
+  <path class="cls-2" d="M-70.446,3088.65l977.9,458.39L449.063,4524.93l-977.9-458.38Z"/>
+  <path class="cls-6" d="M-144.9,0L632.617-281.762,914.379,495.759,136.858,777.521Z"/>
+  <path class="cls-7" d="M-444.9,554L332.617,272.237,614.379,1049.76l-777.521,281.76Z"/>
+  <path class="cls-8" d="M827.826,492.338L739.113,202.3l314.327-23.274Z"/>
+  <path id="bg-6" data-name="bg" class="cls-9" d="M2007,1215c-13.51-6.63-1031-553-1031-553L1759-11l290-7S2020.51,1221.63,2007,1215Z"/>
+</svg>

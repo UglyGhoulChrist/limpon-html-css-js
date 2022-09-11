@@ -1,0 +1,166 @@
+// Заголовки, общие БЭМ блоки и проче...
+
+// home делится пополам на два блока block-out-left и block-out-right.
+// внутренним блокам block-in-left и block-in-right  задаётся  максимальная ширина,
+// паддинг безопасности.
+
+.block-out-left {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.block-out-right {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+
+    @media (max-width:$mobile) {
+        justify-content: center;
+
+    }
+}
+
+.block-in-left {
+    width: 100%;
+    max-width: 570px;
+    padding-left: 15px;
+}
+
+.block-in-right {
+    width: 100%;
+    max-width: 555px;
+    margin-left: -25px;
+    height: 100%;
+    padding-top: 100px;
+    padding-left: 25px;
+    display: grid;
+    align-items: center;
+    row-gap: 30px;
+    background: url('../img/icon.webp') left top no-repeat;
+
+    @media (max-width:$mobile) {
+        max-width: none;
+    }
+}
+
+.h2 {
+    font-size: rem(40);
+    color: $titleDark;
+    font-weight: 700;
+    line-height: 1.25;
+    text-transform: capitalize;
+
+    &_dark {
+        color: $titleLight;
+    }
+
+    @media (max-width:1024px) {
+
+        font-size: rem(30);
+
+    }
+
+    @media (max-width:375px) {
+
+        font-size: rem(25);
+
+    }
+}
+
+.h2-subtitle {
+    display: block;
+    margin-bottom: 20px;
+    font-size: rem(14);
+    font-weight: 800;
+    color: $subtitleDark;
+    text-transform: uppercase;
+    letter-spacing: rem(6);
+
+    &_dark {
+        color: $subtitleLight;
+    }
+}
+
+.button {
+    width: fit-content;
+    display: inline-block;
+    border: 2px solid $backgroundDark;
+    background-color: $backgroundMiddle;
+    padding: 0px 40px;
+    border-radius: 30px;
+    font-size: rem(14);
+    text-transform: uppercase;
+    letter-spacing: rem(2);
+    line-height: 60px;
+
+    @media (max-width:$tablet) {
+        border-radius: 25px;
+
+        line-height: 50px;
+    }
+
+    @media (max-width:$mobile) {
+        border-radius: 20px;
+
+        line-height: 40px;
+    }
+
+    color: $textDark;
+    font-weight: 700;
+    transition-duration: .2s;
+
+    &:hover {
+        background-color: $backgroundDark;
+        color: $textLight;
+    }
+}
+
+.text {
+    color: $textDark;
+    line-height: 1.625;
+    font-size: rem(16);
+
+    &_light {
+        color: $textLight;
+    }
+}
+
+
+.icon {
+    margin-left: -20px;
+    flex: 0 0 97px;
+}
+
+.social {
+    display: flex;
+    column-gap: 10px;
+
+    &__link {
+        color: $textDark;
+        width: 50px;
+        height: 50px;
+        display: grid;
+        place-items: center;
+        border-radius: 50%;
+        transition-duration: .3s;
+        font-size: rem(20);
+
+        &_footer {
+            color: $textLight;
+            border-radius: 10%;
+
+            &:hover {
+                color: $textLight;
+                background: $backgroundLight;
+                box-shadow: 0px 4px 5px rgba(0, 0, 0, .5);
+            }
+        }
+
+        &:hover {
+            color: $textLight;
+            background: $backgroundMiddle;
+            box-shadow: 0px 4px 5px rgba(0, 0, 0, .5);
+        }
+    }
+}

@@ -1,0 +1,87 @@
+.contacts {
+    background: rgb(237, 246, 255);
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+
+    &__container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+
+        @media (max-width:$mobile) {
+            flex-direction: column;
+        }
+    }
+
+    &__grafic {
+        flex: 0 0 42%;
+        width: 100%;
+        text-align: center;
+    }
+
+    &__img {
+        width: 100%;
+        max-width: 450px;
+    }
+
+    &__content {
+        flex: 0 0 58%;
+        display: grid;
+        row-gap: 30px;
+    }
+
+    &__title {}
+
+    &__text {}
+
+    &__link {}
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    row-gap: 40px;
+
+    &__block {
+        position: relative;
+        display: flex;
+        align-items: baseline;
+
+        i {
+            transform: translateX(-40px);
+            color: $titleDark;
+        }
+    }
+
+    &__input {
+        width: 100%;
+        border: 2px solid $backgroundMiddle;
+        border-radius: 30px;
+        height: 70px;
+        padding: 10px 10px 10px 40px;
+        font-size: rem(20);
+        color: $titleDark;
+        outline: none;
+    }
+
+    &__textarea {
+        width: 100%;
+        border: 2px solid $backgroundMiddle;
+        border-radius: 30px;
+        height: 140px;
+        padding: 10px 10px 10px 40px;
+        font-size: rem(20);
+        color: $titleDark;
+        resize: none;
+        outline: none;
+
+        &::-webkit-scrollbar {
+            width: 0;
+        }
+    }
+
+    ._telegram {
+        border-radius: 50%;
+    }
+}

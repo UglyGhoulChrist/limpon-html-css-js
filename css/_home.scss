@@ -1,0 +1,71 @@
+.home {
+    background: url('../img/home/bg.svg') center / cover no-repeat;
+    padding-top: 130px;
+    padding-bottom: 10vh;
+
+    // home делится пополам на два блока block-out-left и block-out-right.
+    // внутренним блокам block-in-left и block-in-right  задаётся  максимальная ширина,
+    // паддинг безопасности.
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    .block-in-left {
+
+        &_home {
+            display: flex;
+            row-gap: 60px;
+            flex-direction: column;
+            justify-content: flex-end;
+            align-items: flex-start;
+        }
+    }
+
+    &__buttons {
+        display: grid;
+        gap: 10px;
+    }
+
+    &__img {
+        width: 100%;
+    }
+
+    @media (max-width:1024px) {
+        .h1 {
+            font-size: rem(60);
+        }
+    }
+    @media (max-width:375px) {
+        .h1 {
+            font-size: rem(50);
+        }
+    }
+
+    @media (max-width:$mobile) {
+        grid-template-columns: 1fr ;
+        .block-out-right {
+            display: none;
+        }
+        .block-in-left{
+            max-width: none;padding-right: 15px;
+            row-gap: 30px;
+        }
+        .home__buttons{
+            display: flex;
+            width: 100%;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+    }
+}
+
+h1 {
+    font-size: rem(80);
+    font-weight: 600;
+    color: $titleDark;
+    line-height: 1.125;
+    text-transform: capitalize;
+    letter-spacing: rem(-4);
+
+
+}

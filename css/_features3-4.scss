@@ -1,0 +1,55 @@
+.features3-4 {
+    padding-bottom: 10vh;
+    padding-top: 10vh;
+    background: linear-gradient(90deg, #fff, $backgroundMiddle);
+
+    &_rev {
+        background: linear-gradient(90deg, $backgroundMiddle, #fff);
+    }
+
+    &__container {
+        display: flex;
+        gap: 25px;
+        justify-content: space-between;
+        align-items: center;
+
+        @media (max-width:$mobile) {
+            flex-direction: column;
+        }
+
+        &_reverse{
+            @media (max-width:$mobile) {
+                flex-direction: column-reverse;
+            } 
+        }
+    }
+
+    &__grafic {
+        flex: 0 0 42%;
+        width: 100%;
+        text-align: center;
+    }
+
+    &__img {
+        width: 100%;
+        max-width: 450px;
+    }
+
+    &__content {
+        flex: 0 0 58%;
+        margin-left: -25px;
+        height: 100%;
+        padding-top: 100px;
+        padding-left: 25px;
+        display: grid;
+        align-items: center;
+        row-gap: 30px;
+        background: url('../img/icon.webp') left top no-repeat;
+    }
+
+    &__title {}
+
+    &__text {}
+
+    &__link {}
+}
