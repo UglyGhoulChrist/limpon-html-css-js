@@ -5,21 +5,22 @@
 
     &__container {
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         row-gap: 50px;
         justify-content: space-between;
         align-items: center;
 
-        @media (max-width:$mobile) {
-            .block-out-right {
-                justify-content: center;
-            }
+        .block-out-right {
+            justify-content: center;
+
+        }
+
+        @media (min-width:$mobile) {
+            flex-direction: row;
         }
     }
 
-    @media (max-width:$mobile) {
-        flex-direction: column;
-    }
+
 
     &__content {
         flex: 0 0 58%;

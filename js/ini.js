@@ -1,6 +1,6 @@
 $('.single-item').slick({
   infinite: true,
-  // autoplay: true,
+  autoplay: true,
   dots: true,
   arrows: false,
   slidesToShow: 3,
@@ -30,27 +30,21 @@ $('.single-item').slick({
 $('.single-item_4').slick({
   infinite: true,
   autoplay: true,
-  pauseOnHover:false,
+  pauseOnHover: false,
   dots: false,
   arrows: false,
-  slidesToShow: 3,
+  slidesToShow: 4,
   slidesToScroll: 1,
   // adaptiveHeight:true,
   responsive: [
     {
-      breakpoint: 1920,
-      settings: {
-        slidesToShow: 4,
-      }
-    },
-    {
-      breakpoint: 1024,
-      settings: {
-        slidesToShow:3 ,
-      }
-    },
-    {
       breakpoint: 768,
+      settings: {
+        slidesToShow: 3,
+      }
+    },
+    {
+      breakpoint: 500,
       settings: {
         slidesToShow: 2,
       }

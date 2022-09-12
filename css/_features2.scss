@@ -7,7 +7,8 @@
     @media (max-width:$mobile) {
         grid-template-columns: 1fr;
         justify-items: center;
-        .block-out-left{
+
+        .block-out-left {
             display: none;
         }
     }
