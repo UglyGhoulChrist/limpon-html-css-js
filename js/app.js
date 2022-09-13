@@ -2,7 +2,6 @@
     "use strict";
     window.addEventListener("load", (() => {
         const body = document.body;
-        body.style.opacity = 1;
         const hamb = document.querySelector("#hamb");
         const popup = document.querySelector("#popup");
         const menu = document.querySelector("#menu").cloneNode(1);

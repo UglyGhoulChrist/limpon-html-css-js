@@ -6,11 +6,6 @@
 	<meta charset="UTF-8">
 	<!-- <meta http-equiv="X-UA-Compatible" content="IE=edge"> -->
 	<meta name="format-detection" content="telephone=no">
-	<style>
-		body {
-			opacity: 0;
-		}
-	</style>
 	<meta name="description" content="">
 	<meta name="keywords" content="">
 	<meta name="author" content="UglyGhoulChrist@gmail.com">
@@ -22,6 +17,8 @@
 		crossorigin="anonymous" referrerpolicy="no-referrer" />
 	<!-- Подключение jquery -->
 	<script defer src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+	<!-- Инициализация прелоадера -->
+	<script defer src="./js/preloader.js"></script>
 	<!-- Подключение слайдера -->
 	<script defer src="./js/slick.min.js"></script>
 	<!-- Инициализация слайдера -->
@@ -35,6 +32,16 @@
 
 <body>
 	<div class="wrapper">
+		<div class="loader">
+			<div class="demo">
+				<div class="circle">
+					<div class="inner"></div>
+				</div>
+				<div class="circle">
+					<div class="inner"></div>
+				</div>
+			</div>
+		</div>
 		<header class="header" id="header">
 			<div class="__container">
 				<nav class="navbar">
