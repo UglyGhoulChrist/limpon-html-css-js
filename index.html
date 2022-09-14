@@ -17,8 +17,6 @@
 		crossorigin="anonymous" referrerpolicy="no-referrer" />
 	<!-- Подключение jquery -->
 	<script defer src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-	<!-- Инициализация прелоадера -->
-	<script defer src="./js/preloader.js"></script>
 	<!-- Подключение слайдера -->
 	<script defer src="./js/slick.min.js"></script>
 	<!-- Инициализация слайдера -->
@@ -32,15 +30,9 @@
 
 <body>
 	<div class="wrapper">
-		<div class="loader">
-			<div class="demo">
-				<div class="circle">
-					<div class="inner"></div>
-				</div>
-				<div class="circle">
-					<div class="inner"></div>
-				</div>
-			</div>
+
+		<div id="preloader" class="preloader">
+			<div class="preloader-5"></div>
 		</div>
 		<header class="header" id="header">
 			<div class="__container">
@@ -500,6 +492,12 @@
 			</div>
 		</footer>
 	</div>
+	<!-- Инициализация прелоадера -->
+	<script>window.onload = function () {
+			setTimeout(function () {
+				document.getElementById('preloader').style.opacity = 0;
+			}, 200);
+		};</script>
 </body>
 
 </html>
