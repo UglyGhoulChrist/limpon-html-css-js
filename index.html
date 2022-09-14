@@ -31,7 +31,7 @@
 <body>
 	<div class="wrapper">
 
-		<div id="preloader" class="preloader">
+		<div class="preloader">
 			<div class="preloader-5"></div>
 		</div>
 		<header class="header" id="header">
@@ -493,11 +493,15 @@
 		</footer>
 	</div>
 	<!-- Инициализация прелоадера -->
-	<script>window.onload = function () {
+	<script>
+		window.onload = function () {
 			setTimeout(function () {
-				document.getElementById('preloader').style.opacity = 0;
+				document.querySelector('.preloader').style.cssText = `
+				opacity: 0;
+				z-index: -1000;`
 			}, 200);
-		};</script>
+		};
+	</script>
 </body>
 
 </html>
